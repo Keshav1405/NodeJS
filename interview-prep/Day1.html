@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-size: 1.3rem;
+            font-family: 'Lobster', cursive;
+            text-align: justify;
+        }
+        h1{
+            text-align: center;
+            color: lightseagreen;
+        }
+        h3{
+            color: red;
+            font-size: 2rem;
+        }
+        div{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Node js Day1 interview questions</h1>
+    <h3>Q1. What is node.js ?</h3>
+    <p>Node.js is an open source and cross-platform runtime environment for executing JavaScript code outside of a browser. We often use Node.js for building back-end services like APIs like Web App or Mobile App. It's used in production by large companies such as Paypal, Uber, Netflix, Walmart and so on.</p>
+    <hr>
+    <h3>Q2. What is NPM?</h3>
+    <p>NPM stands for the node package manager, npm is used for node dependency management. It is the default package manager for the JavaScript runtime environment Node.js. Help to manage a project's dependencies. npm is installed with Node automatically.</p>
+    <hr>
+    <h3>Q3. What are the modules in Node.js?</h3>
+    <p>Modules are the blocks of encapsulated code that communicate with an external application on the basis of their related functionality. The reason programmers are heavily reliant on modules is because of their re-usability as well as the ability to break down a complex piece of code into manageable chunks.</p>
+    <hr>
+    <h3>Q4. What is the purpose of the module.exports?</h3>
+    <p>Module.exports is the instruction that tells Node. js which bits of code (functions, objects, strings, etc.) to “export” from a given file and other files can import them by require() method.</p>
+    <hr>
+    <h3>Q5. Difference between default export and named export.</h3>
+    <p>Named Exports: Named exports are useful to export several values. During the import, it is mandatory to use the same name of the corresponding object. Named exports allow us to share multiple objects, functions or variables from a single file and were introduced with the release of ES2015. Named exports are imported with curly braces in various files.</p>
+    <div>Default Exports: Default exports are useful to export only a single object, function, variable. During the import, we can use any name to import.Exports without a default tag are Named exports. Exports with the default tag are Default exports</div>
+    <hr>
+    <h3>Q6. How do you import any module in Node.js?</h3>
+    <p>Importing a Module: We need to import the module to use the functions defined in the imported module in another file. The result returned by require() is stored in a variable which is used to invoke the functions using the dot notation.</p>
+    <div>const func1 = require('./sayHi')</div>
+    <hr>
+    <h3>Q7. What are the different types of HTTP requests?</h3>
+    <p>HTTP (Hypertext Transfer Protocol) specifies a collection of request methods to specify what action is to be performed on a particular resource. The most commonly used HTTP request methods are:</p>
+    <ul>
+        <li>GET: GET request is used to read/retrieve data from a web server.</li>
+        <li>POST: POST request is used to send data (file, form data, etc.) to the server.</li>
+        <li>PUT: A PUT request is used to modify the data on the server. It replaces the entire content at a particular location with data that is passed in the body payload.</li>
+        <li>PATCH: PATCH is similar to PUT request, but the only difference is, it modifies a part of the data. It will only replace the content that you want to update.</li>
+        <li>DELETE: A DELETE request is used to delete the data on the server at a specified location.</li>
+    </ul>
+    <hr>
+    <h3>Q8. Explain the concept of middleware in Node.js.</h3>
+    <p>Middleware gets executed after the server receives the request and before the controller actions send the response. Middleware has the access to the request object, responses object, and next, it can process the request before the server send a response. An Express-based application is a series of middleware function calls. The next() function in the express is responsible for calling the next middleware function if there is one</p>
+    <hr>
+    <h3>Q9. Explain CORS.</h3>
+    <p>CORS : (Cross-Origin Resource Sharing) is a mechanism by which data or any other resource of a site could be shared intentionally to a third party website when there is a need. Generally, access to resources that are residing in a third party site is restricted by the browser clients for security purposes.</p>
+    <hr>
+    <h3>Q10. What is Express? How it helps you to create a backend application?</h3>
+    <p>Express.js: Express is a small framework that sits on top of Node.js's web server functionality to simplify its APIs and add helpful new features. It makes it easier to organize your application's functionality with middleware and routing. It is used to build web-apps using approaches and principles of Node.js. It requires less coding time.</p>
+    <hr>
+    <h3>Q11. Explain min 5 status codes gets used in Backend development.</h3>
+    <p>An HTTP status code is a message a website's server sends to the browser to indicate whether or not that request can be fulfilled. Status codes specs are set by the W3C. Status codes are embedded in the HTTP header of a page to tell the browser the result of its request.</p>
+    <ul>
+        <li>102 PROCESSING</li>
+        <li>Processing 200 OK OK</li>
+        <li>400 BAD_REQUEST</li>
+        <li>401 UNAUTHORIZED Unauthorized</li>
+        <li>402 PAYMENT_REQUIRED</li>
+        <li>403 FORBIDDEN</li>
+        <li>404 NOT_FOUND</li>
+        <li>500 INTERNAL_SERVER_ERROR</li>
+        <li>503 - Service Unavailable</li>
+    </ul>
+    <hr>
+    <h3>Q12. Difference between HTTP and HTTPS.</h3>
+    <p>HTTPS is HTTP with encryption. The only difference between the two protocols is that HTTPS uses TLS (SSL) to encrypt normal HTTP requests and responses. As a result, HTTPS is far more secure than HTTP. A website that uses HTTP has http:// in its URL, while a website that uses HTTPS has https://.</p>
+    <hr>
+    <h3>Q13. What are JWT tokens?</h3>
+    <p>JSON web token (JWT) is an open standard that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. JWT is a standard, meaning that all JWTs are tokens, but not all tokens are JWTs. when we logged-in somewhere , they provide us a unique token.which helps us to access through it token is provided only when the registered data and login data are matching. Ex:-facebook</p>
+</body>
+</html>
